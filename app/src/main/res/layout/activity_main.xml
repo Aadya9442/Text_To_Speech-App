@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <ImageView
+        android:id="@+id/mic"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/baseline_mic_none_24"
+        app:layout_constraintBottom_toTopOf="@+id/et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exit"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:text="EXIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="318dp"
+        android:layout_marginBottom="78dp"
+        android:drawableLeft="@drawable/baseline_child_care_24"
+        android:drawableRight="@drawable/baseline_mode_edit_24"
+        android:drawablePadding="15dp"
+        android:hint="Text OR Emoji"
+        android:minHeight="48dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="9dp"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="239dp"
+        android:drawableLeft="@drawable/baseline_mic_none_24"
+        android:paddingLeft="15dp"
+        android:text="Get Speech"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
